@@ -131,7 +131,7 @@ a {
 }
 
 h3,
-h5 {
+h5,h4 {
   color: #ff702a;
 }
 
@@ -160,7 +160,8 @@ main a {
 /* ---------------home--------------------- */
 .home {
   border-bottom: solid 2px #ff702a;
-  height: 92vh;
+  height: calc(100vh - 120px);
+  padding-bottom:5px;
   display: grid;
   grid-template:
     "conthome"
@@ -194,6 +195,132 @@ main a {
     padding: 2px;
   }
 }
+/* ------------------about----------------- */
+.about{
+  border-bottom: solid 2px #ff702a;
+  height: calc(100vh - 120px);
+  padding-bottom:5px;
+  display: grid;
+  grid-template:
+    "contabout"
+    "imgabout";
+  .contabout {
+    grid-area: contabout;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+    width: 100%;
+  }
+  .imgabout {
+    grid-area: imgabout;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  img{
+    width: 280px;
+  }
+  a {
+    width: 40%;
+    padding: 2px;
+  }
+}
+/* --------------------food menu---------------- */
+.Foodmenu {
+  border-bottom: solid 2px #ff702a;
+  padding-bottom: 5px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.contmenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.contmenu h4 {
+  margin-top: 40px;
+}
+.imgsMenu{
+  display: flex;
+  flex-direction: column;
+  height:130vh;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.imgs {
+  background-color: #FFEFE8;
+  width: 70%;
+
+}
+.imgs h5{
+  font-size: 1.5rem;
+}
+.imgs img {
+  width: 200px;
+}
+.imgs h4{
+  color: black;
+}
+
+/* --------------------------services--------------- */
+.services{
+  border-bottom: solid 2px #ff702a;
+  padding-bottom: 5px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.ContImgServices{
+  display: flex;
+  flex-direction: column;
+  height:130vh;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.contservices {
+  display: flex;
+  flex-direction: column;
+}
+
+.contservices h4 {
+  margin-top: 40px;
+}
+.imgServices img {
+  width: 200px;
+}
+.imgServices {
+  width: 70%;
+
+}
+/* -----------------info------------- */
+.info{
+  border-bottom: solid 2px #ff702a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.contInfo{
+  background-color: #FFEFE8;
+  width: 80%;
+}
+.contInfo h2{
+  margin: 10px;
+  color: black;
+}
+
+
+
+
+
+
+
+
 /* ------------------media----------------------------------------------------------- */
 @media (min-width: 768px) {
   /* ----------------header y nav----------------- */
@@ -225,10 +352,9 @@ main a {
   .hamb {
     display: none;
   }
-  /* ------------------------home--------------------------- */
+  /* ------------------------home-media--------------------------- */
 
   .home {
-    height: 80vh;
     display: grid;
     align-items: center;
     justify-content: space-evenly;
