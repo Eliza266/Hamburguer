@@ -349,7 +349,6 @@ footer {
 }
 footer h2 {
   color: white;
-  font-weight: 200;
 }
 .contact {
   grid-area: contact;
@@ -450,23 +449,37 @@ i {
     display: grid;
     padding: 30px;
   }
-  .ContImgServices{
+  .ContImgServices {
     display: flex;
     flex-direction: row;
   }
   /* ------------------------Info Media---------- */
-  
-  .contInfo{
+
+  .contInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 200px;
   }
-  .contInfo h1{
+  .contInfo h1 {
     color: black;
     font-size: 2.5rem;
     font-weight: 500;
   }
-
+  /* ------------------------Footer Media--------------------- */
+  footer {
+    display: grid;
+    grid-template: "links contact";
+    justify-content: center;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+  }
 }
