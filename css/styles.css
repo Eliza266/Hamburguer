@@ -16,8 +16,10 @@ li {
   margin: 10px;
 }
 ul {
+  width: 100%;
   list-style: none;
   text-align: center;
+  font-size: 1.5rem;
   padding: 0;
 }
 .header {
@@ -214,7 +216,6 @@ main a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: 10px;
   }
   img {
@@ -374,6 +375,11 @@ i {
     float: right;
     width: fit-content;
     background-color: transparent;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .menu ul {
     margin-left: 10px;
